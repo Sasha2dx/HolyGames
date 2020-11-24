@@ -18,6 +18,12 @@
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
 
 
-body {background-color: #222; color: #c5c5c5}
+body {background-color: #222; color: #c5c5c5;  padding-bottom: 15%;}
+
+.help { padding-bottom: 25%; padding-right: 25%;}
+.help h3 {margin-left: 10px}
+.help p {margin-left: 30px; line-height: 21px;}
+.help img {margin-left: 30px;}
+
 
 #unityContainer {box-shadow: 0 1px 4px 0 #0a0f1b9c;}
