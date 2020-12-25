@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Words fun (Demo)</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/PreAlpha.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+  <h1>RuningWords (demo)</h1>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 900px; height: 600px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Fullscreen! >> </div>
+		 <div class="help">
+			<h3>Пре-альфа версия игры:</h3>
+			<p>Готовы многие элементы интерфейса, можно тыкать во всё что тыкается. Нет ещё многих больших разделов и не хватает анимаций и эффектов, а так же повсеместно возможны баги.</p>
+        	<h3>Управление:</h3>
+        	<p>
+				<b>Свайпы влево и вправо | стрелки влево и вправо</b> - переместиться влево или вправо.</br>
+        		<b>Свайп вверх | стрелка вверх</b> - ускорение к ближайшему слову.</br>
+				<b>Свайп вниз | стрелка вниз</b> - замедление и подсказка.</br>
+				<b>Двойной тап | пробел</b> - прыжок.</br>
+        		</br>
+        	</p>
+        	<h3>При низком фпс:</h3>
+			<p>Данная демка очень тяжёлая, поэтому в браузере на телефоне рассчитывать на высокий фпс и отзывчивость не стоит.</br>
+			Впрочем, вначале стоит подождать первых 30 секунд, пока окончательно прогрузятся все ресурсы и фпс возможно увеличится. Если же тлефон не может обеспечить достаточную производительность - стоит запускать на пк. <s>Так же ранее была <a href="https://dev.holy-games.space/play/RuningWords/">облегчённая версию<a> (в ней только геймплей) но она потеряла актуальность. </s></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
